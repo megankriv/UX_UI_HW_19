@@ -1,3 +1,22 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+/*header styling*/
+.inline-block {
+    display: inline-block;
+    vertical-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 12px;
+    margin: auto;
+}
+
+.heroImg. {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .mySkills {
     text-align: center;
   }
@@ -20,8 +39,8 @@
       padding: 10px;
       margin: 10px;
   }
-  #child2 {
-      flex-grow: 1;
+  #child2 { 
+    flex-grow: 1;
       background-color: blanchedalmond;
       height: 260px;
       width: 33%;
@@ -29,7 +48,7 @@
       margin: 10px;
   }
   #child3 {
-      flex-grow: 1;
+    flex-grow: 1;
       background-color: blanchedalmond;
       height: 260px;
       width: 33%;
@@ -55,25 +74,25 @@
       ;
   }
   .topImg {
-      grid-area: topImg;
-      background-color: white;
-  }
-  img.mindpic {
-      width: 350px;
-      height: auto;
-  }
+    grid-area: topImg;
+    background-color: white;
+}
+img.mindpic {
+    width: 350px;
+    height: auto;
+}
   .MindEase {
       grid-area: MindEase;
       background-color: blanchedalmond;
   }
   .middleImg {
-      grid-area: middleImg;
-      background-color:white;
-  }
-  img.USDApic {
-      width: 300px;
-      height: auto;
-  }
+    grid-area: middleImg;
+    background-color:white;
+}
+img.USDApic {
+    width: 300px;
+    height: auto;
+}
   .USDAbox {
       grid-area: USDAbox;
       background-color: blanchedalmond;
@@ -89,9 +108,14 @@
       grid-area: CUSP;
       background-color: blanchedalmond;
   }
+  /*footer styling*/
+  p {
+    display: flex;
+    justify-content: center;
+  }
   
   @media only screen and (max-width:600){
-      #flexContainer {
+      .flexContainer {
               display: flex;
               align-content: center;
               justify-content: center;
@@ -101,7 +125,8 @@
               width: auto;
        }
        #child1 {
-          flex-grow: 1;
+        display: flex;  
+        flex-grow: 1;
           background-color: blanchedalmond;
           height: 260px;
           width: 100%;
@@ -109,6 +134,7 @@
           margin: 10px;
        }
       #child2 {
+        display: flex;
           flex-grow: 1;
           background-color: blanchedalmond;
           height: 260px;
@@ -117,7 +143,8 @@
           margin: 10px;
       }
       #child3 {
-          flex-grow: 1;
+        display: flex;   
+        flex-grow: 1;
           background-color: blanchedalmond;
           height: 260px;
           width: 100%;
@@ -127,17 +154,23 @@
   }
   #workGrid {
       display: grid;
-      height: 800px;
-      width: 1200px;
+      height: 368px;
+      width: 552px;
       margin:auto;
       justify-content: space-evenly;
       align-content: space-evenly;
-      grid-template-columns: 33% 33% 33%;
+      grid-template-columns: 100%;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas: 
-      "topImg MindEase MindEase"
-      "middleImg USDAbox USDAbox"
-      "bottomImg CUSP CUSP"
+      "topImg" 
+      "MindEase" 
+      "MindEase"
+      "middleImg" 
+      "USDAbox" 
+      "USDAbox"
+      "bottomImg" 
+      "CUSP" 
+      "CUSP"
       ;
   }
   }
